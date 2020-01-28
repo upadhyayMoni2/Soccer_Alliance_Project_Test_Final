@@ -144,7 +144,7 @@
                     android:layout_height="30pt"
                     android:layout_margin="16dp"
                     android:text="CONTINUE AS GUEST"
-                    style="@style/NormalButtonStyle"/>
+                    style="@style/VarientButtonStyle"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -60,7 +60,7 @@
                 app:layout_constraintTop_toBottomOf="@id/signup4_registration_txt"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/signup4_OTP_edit_txt"
+                android:id="@+id/signup4_OTP_layout"
                 style="@style/TextInputLayoutStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,14 +74,14 @@
                 app:layout_constraintTop_toBottomOf="@id/signup4_OTP_txt">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signup4_OTP_Txt"
+                    android:id="@+id/signup4_OTP_edit_txt"
                     style="@style/TextInputEditTextStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="------"
                     android:gravity="center"
                     android:imeOptions="actionNext"
-                    android:inputType="textPassword"
+                    android:inputType="number"
                     android:textColorHint="@android:color/white" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -104,16 +104,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/signup_divider"/>
             -->
-            <com.google.android.material.button.MaterialButton
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/signup4_OTP_edit_txt"
-                android:id="@+id/login_btn"
-                style="@style/NormalButtonStyle"
-                android:layout_width="150dp"
-                android:layout_height="30pt"
-                android:layout_margin="16dp"
-                android:text="Validate" />
 
 
 
@@ -129,12 +119,13 @@
             android:gravity="right"
             android:orientation="vertical">
 
-            <ImageButton
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signup4_validate_otp_btn"
+                style="@style/NormalButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
                 android:layout_margin="16dp"
-                android:id="@+id/signup4_next_btn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="@drawable/next_btn" />
+                android:text="VALIDATE" />
 
         </LinearLayout>
     </RelativeLayout>

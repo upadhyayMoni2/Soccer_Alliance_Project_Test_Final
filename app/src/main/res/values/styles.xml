@@ -51,6 +51,26 @@
 
     </style>
 
+    <style name="VarientButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="backgroundTint">@android:color/white</item>
+        <item name="cornerRadius">10dp</item>
+
+    </style>
+
+    <style name="TextInputAutoCompleteLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/user_auth_default_textinput_border_color</item>
+        <item name="hintTextAppearance">@style/TextInputHint</item>
+        <item name="errorTextAppearance">@style/TextInputError</item>
+        <item name="errorTextColor">@color/colorErroronAuth</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="hintTextColor">@android:color/white</item>
+        <item name="endIconTint">@android:color/white</item>
+        <item name="errorIconTint">@android:color/white</item>
+        <item name="startIconTint">@android:color/white</item>
+    </style>
 
 
 </resources>
