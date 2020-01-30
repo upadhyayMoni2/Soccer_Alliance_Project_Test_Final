@@ -27,5 +27,5 @@
         app:itemTextAppearance="@style/NavDrawerTexApptStyle"
         app:itemTextColor="@color/nav_draw_item_style"
         android:theme="@style/NavigationTheme"
-        android:background="@android:color/darker_gray"/>
+        android:background="@color/colorNavDrawerBackground"/>
 </androidx.drawerlayout.widget.DrawerLayout>
