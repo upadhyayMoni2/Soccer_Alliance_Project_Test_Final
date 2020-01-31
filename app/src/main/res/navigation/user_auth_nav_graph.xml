@@ -55,4 +55,14 @@
             android:id="@+id/action_splash_Screen_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.soccer_alliance_project_test.Registration_TeamManager"
+        android:label="fragment_blank"
+        tools:layout="@layout/Registraion_TeamManager" />
+    <fragment
+        android:id="@+id/registration_LeagueManager"
+        android:name="com.example.soccer_alliance_project_test.Registration_LeagueManager"
+        android:label="fragment_registration__league_manager"
+        tools:layout="@layout/fragment_registration__league_manager" />
 </navigation>
