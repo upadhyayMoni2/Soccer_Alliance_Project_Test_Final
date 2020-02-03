@@ -49,7 +49,7 @@ public class SignUp2_Fragment extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         if(view == signup2_next_btn){
 
-            navController.navigate(R.id.signUp3_Fragment);
+            navController.navigate(R.id.signup_profile_Fragment);
 
         }
     }
