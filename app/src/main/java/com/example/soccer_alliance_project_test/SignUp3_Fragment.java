@@ -16,13 +16,16 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class SignUp3_Fragment extends Fragment implements View.OnClickListener {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class SignUp3_Fragment extends Fragment implements View.OnClickListener{
+
 
     public NavController navController;
     private Context context;
 
     ImageButton signup3_next_btn;
-
 
 
     @Override
@@ -35,13 +38,11 @@ public class SignUp3_Fragment extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         navController = Navigation.findNavController(getActivity(),R.id.host_fragment);
         context = getActivity().getApplicationContext();
 
         signup3_next_btn = view.findViewById(R.id.signup3_next_btn);
         signup3_next_btn.setOnClickListener(this);
-
     }
 
     @Override

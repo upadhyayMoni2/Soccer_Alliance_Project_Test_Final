@@ -7,4 +7,5 @@
     <color name="colorError">#FC642D</color>
     <color name="colorErroronAuth">#FFFFFF</color>
     <color name="colorNormalButton">#1c28c9</color>
+    <color name="colorNavDrawerBackground">#dfe0dd</color>
 </resources>
