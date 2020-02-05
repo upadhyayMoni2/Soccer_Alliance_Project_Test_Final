@@ -10,4 +10,49 @@
         android:name="com.example.soccer_alliance_project_test.Home_Fragment"
         android:label="Soccer Alliance"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/teamListFragment"
+        android:name="com.example.soccer_alliance_project_test.TeamListFragment"
+        android:label="Teams"
+        tools:layout="@layout/fragment_team_list" />
+    <fragment
+        android:id="@+id/country_List_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Country_List_Fragment"
+        android:label="fragment_country_list"
+        tools:layout="@layout/fragment_country_list" />
+    <fragment
+        android:id="@+id/player_List_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Player_List_Fragment"
+        android:label="fragment_player_list"
+        tools:layout="@layout/fragment_player_list" />
+    <fragment
+        android:id="@+id/upcomingMatchFragment"
+        android:name="com.example.soccer_alliance_project_test.UpcomingMatchFragment"
+        android:label="fragment_upcoming_match"
+        tools:layout="@layout/fragment_upcoming_match" />
+    <fragment
+        android:id="@+id/match_Score_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Match_Score_Fragment"
+        android:label="fragment_match_score"
+        tools:layout="@layout/fragment_match_score" />
+    <fragment
+        android:id="@+id/my_Team_Fragment"
+        android:name="com.example.soccer_alliance_project_test.My_Team_Fragment"
+        android:label="fragment_my_team"
+        tools:layout="@layout/fragment_my_team" />
+    <fragment
+        android:id="@+id/add_Player_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Add_Player_Fragment"
+        android:label="fragment_add_team"
+        tools:layout="@layout/fragment_add_player" />
+    <fragment
+        android:id="@+id/add_Team_in_League_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Add_Team_in_League_Fragment"
+        android:label="fragment_add_team_in_league"
+        tools:layout="@layout/fragment_add_team_in_league" />
+    <fragment
+        android:id="@+id/team_mngr_my_profile_Fragment"
+        android:name="com.example.soccer_alliance_project_test.Team_mngr_my_profile_Fragment"
+        android:label="fragment_team_mngr_my_profile_"
+        tools:layout="@layout/fragment_team_mngr_my_profile_" />
 </navigation>

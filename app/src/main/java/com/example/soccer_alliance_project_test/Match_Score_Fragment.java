@@ -16,18 +16,19 @@ import android.view.ViewGroup;
 import com.google.android.material.tabs.TabLayout;
 
 
-public class Home_Fragment extends Fragment {
+public class Match_Score_Fragment extends Fragment {
 
-    private TabLayout dashboardTabLayout;
-    private ViewPager tabs_view_pager;
-    private ViewPageAdapter viewPageAdapter;
+
+    private TabLayout ms_tabs_layout;
+    private ViewPager ms_tabs_view_pager;
+    private Match_Score_ViewPageAdapter ms_viewPageAdapter;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_match_score, container, false);
     }
 
     @Override
@@ -35,16 +36,16 @@ public class Home_Fragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         /*-------------Tab Layout Setup---------*/
-        dashboardTabLayout = view.findViewById(R.id.dashboard_tabs_layout);
-        tabs_view_pager = view.findViewById(R.id.tabs_view_pager);
-        viewPageAdapter = new ViewPageAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,2);
-        tabs_view_pager.setAdapter(viewPageAdapter);
-        tabs_view_pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(dashboardTabLayout));
-        dashboardTabLayout.setupWithViewPager(tabs_view_pager);
-        dashboardTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        ms_tabs_layout = view.findViewById(R.id.ms_tabs_layout);
+        ms_tabs_view_pager = view.findViewById(R.id.ms_tabs_view_pager);
+        ms_viewPageAdapter = new Match_Score_ViewPageAdapter(getChildFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT,2);
+        ms_tabs_view_pager.setAdapter(ms_viewPageAdapter);
+        ms_tabs_view_pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(ms_tabs_layout));
+        ms_tabs_layout.setupWithViewPager(ms_tabs_view_pager);
+        ms_tabs_layout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                tabs_view_pager.setCurrentItem(tab.getPosition());
+                ms_tabs_view_pager.setCurrentItem(tab.getPosition());
             }
 
             @Override
@@ -57,7 +58,6 @@ public class Home_Fragment extends Fragment {
 
             }
         });
-
 
     }
 }
