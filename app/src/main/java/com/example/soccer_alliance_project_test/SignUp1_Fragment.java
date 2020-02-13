@@ -22,9 +22,7 @@ import android.widget.ImageButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class SignUp1_Fragment extends Fragment implements View.OnClickListener {
 
     public NavController navController;
@@ -84,15 +82,19 @@ public class SignUp1_Fragment extends Fragment implements View.OnClickListener {
                 signup_email_edit_txt.setError("Email is Required.");
                 return;
             }
+            if(TextUtils.isEmpty(phone)){
+                signup_phone_edit_txt.setError("phone number is required with country code.");
 
-            else {
+            }
+
+
 
 
                 Bundle bundle = new Bundle();
                 bundle.putString("email", email);
                 bundle.putString("Phone", phone);
                 navController.navigate(R.id.signUp3_Fragment, bundle);
-            }
+
         }
     }
 }

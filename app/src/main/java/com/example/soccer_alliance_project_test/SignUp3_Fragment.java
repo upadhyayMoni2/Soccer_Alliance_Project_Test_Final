@@ -77,18 +77,17 @@ public class SignUp3_Fragment extends Fragment implements View.OnClickListener{
 
 
             String password = signup3_new_password.getEditableText().toString().trim();
+            String confirmpassword = signup3_confirm_password.getEditableText().toString().trim();
             if(TextUtils.isEmpty(password)){
                 signup3_new_password.setError("Password is Required.");
-                return;
-            }
-
-            if(password.length() < 6){
+                return ;
+            }else if(password.length() < 6){
                 signup3_new_password.setError("Password Must be >= 6 Characters");
                 return;
             }
 
 
-            String confirmpassword = signup3_confirm_password.getEditableText().toString().trim();
+
 
             if(password == confirmpassword){
                 signup3_confirm_password.setError("The confirm password conformation does not match!");

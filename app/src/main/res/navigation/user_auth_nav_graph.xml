@@ -60,20 +60,12 @@
         android:id="@+id/forgot_pass2_Fragment"
         android:name="com.example.soccer_alliance_project_test.forgot_pass2_Fragment"
         android:label="fragment_forgot_pass2"
-        tools:layout="@layout/fragment_forgot_pass2" >
-        <action
-            android:id="@+id/action_forgot_pass2_Fragment_to_forgot_pass3_Fragment"
-            app:destination="@id/forgot_pass3_Fragment" />
-    </fragment>
+        tools:layout="@layout/fragment_forgot_pass2" />
     <fragment
         android:id="@+id/forgot_pass1_Fragment"
         android:name="com.example.soccer_alliance_project_test.forgot_pass1_Fragment"
         android:label="fragment_forgot_pass1"
-        tools:layout="@layout/fragment_forgot_pass1" >
-        <action
-            android:id="@+id/action_forgot_pass1_Fragment_to_forgot_pass2_Fragment"
-            app:destination="@id/forgot_pass2_Fragment" />
-    </fragment>
+        tools:layout="@layout/fragment_forgot_pass1" />
     <fragment
         android:id="@+id/forgot_pass3_Fragment"
         android:name="com.example.soccer_alliance_project_test.forgot_pass3_Fragment"

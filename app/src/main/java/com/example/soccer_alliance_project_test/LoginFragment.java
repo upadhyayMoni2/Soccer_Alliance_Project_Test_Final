@@ -96,9 +96,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             if(TextUtils.isEmpty(password)){
                 password_edit_txt.setError("Password is Required.");
                 return;
-            }
-
-            if(password.length() < 6){
+            }else if(password.length() < 6){
                 password_edit_txt.setError("Password Must be >= 6 Characters");
                 return;
             }
