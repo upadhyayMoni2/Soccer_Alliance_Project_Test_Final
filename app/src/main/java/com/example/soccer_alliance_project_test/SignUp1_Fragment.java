@@ -13,10 +13,13 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 
 /**
@@ -30,6 +33,8 @@ public class SignUp1_Fragment extends Fragment implements View.OnClickListener {
     ConstraintLayout signup_team_manager_btn_type,signup_league_manager_btn_type;
     String user_type = "";
     ImageButton signup1_next_btn;
+
+    TextInputEditText signup_email_edit_txt,signup_phone_edit_txt;
 
 
     @Override
@@ -51,6 +56,9 @@ public class SignUp1_Fragment extends Fragment implements View.OnClickListener {
         signup_league_manager_btn_type.setOnClickListener(this);
         signup_team_manager_btn_type.setOnClickListener(this);
         signup1_next_btn.setOnClickListener(this);
+        signup_email_edit_txt = view.findViewById(R.id.signup_email_edit_txt);
+        signup_phone_edit_txt = view.findViewById(R.id.signup_phone_edit_txt);
+
 
     }
 
@@ -67,7 +75,24 @@ public class SignUp1_Fragment extends Fragment implements View.OnClickListener {
             user_type = "League Manager";
         }
         else if(view==signup1_next_btn){
-            navController.navigate(R.id.signUp2_Fragment);
+
+            String email = signup_email_edit_txt.getEditableText().toString().trim();
+
+            String phone = signup_phone_edit_txt.getEditableText().toString().trim();
+
+            if(TextUtils.isEmpty(email)){
+                signup_email_edit_txt.setError("Email is Required.");
+                return;
+            }
+
+            else {
+
+
+                Bundle bundle = new Bundle();
+                bundle.putString("email", email);
+                bundle.putString("Phone", phone);
+                navController.navigate(R.id.signUp3_Fragment, bundle);
+            }
         }
     }
 }
