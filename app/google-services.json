@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "102538740290",
+    "firebase_url": "https://soccerallianceprojecttes-9b2cc.firebaseio.com",
+    "project_id": "soccerallianceprojecttes-9b2cc",
+    "storage_bucket": "soccerallianceprojecttes-9b2cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102538740290:android:10d16835eadfd00e87a3db",
+        "android_client_info": {
+          "package_name": "com.example.soccer_alliance_project_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102538740290-ro68jbpq3oaa592d249r3havejhpatl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.soccer_alliance_project_test",
+            "certificate_hash": "c68d6464261bcff6a38983ec6bbb3ad54b552989"
+          }
+        },
+        {
+          "client_id": "102538740290-80f4a17mgtannat8m61ur1sb13qtsaaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEwWTuWYn8jefRRJY0nQ8csSeg58AD_ZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102538740290-80f4a17mgtannat8m61ur1sb13qtsaaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
