@@ -49,11 +49,11 @@ public class Add_Team_in_League_Fragment extends Fragment {
         comman_checkbox_data_lists = new ArrayList<Comman_Checkbox_Data_List>();
         comman_checkbox_data_lists.clear();
 
-        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 1",R.drawable.user));
-        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 2",R.drawable.user));
-        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 3",R.drawable.user));
-        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 4",R.drawable.user));
-        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 5",R.drawable.user));
+//        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 1",R.drawable.user));
+//        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 2",R.drawable.user));
+//        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 3",R.drawable.user));
+//        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 4",R.drawable.user));
+//        comman_checkbox_data_lists.add(new Comman_Checkbox_Data_List("Add Team 5",R.drawable.user));
 
         comman_checkbox_adapter = new Comman_checkbox_adapter(comman_checkbox_data_lists,context);
         comman_checkbox_adapter.notifyDataSetChanged();

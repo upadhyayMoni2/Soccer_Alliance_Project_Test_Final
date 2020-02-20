@@ -37,8 +37,7 @@ public class Comman_checkbox_adapter extends RecyclerView.Adapter<Comman_checkbo
     public void onBindViewHolder(@NonNull Comman_checkbox_adapter.ViewHolder holder, int position) {
 
         holder.check_item_name.setText(comman_checkbox_data_list.get(position).getCheck_item_name());
-        holder.check_item_image.setImageResource(comman_checkbox_data_list.get(position).getCheck_item_image());
-
+       // holder.check_item_image.setImageResource(comman_checkbox_data_list.get(position).getCheck_item_image());
 
     }
 
@@ -65,6 +64,7 @@ public class Comman_checkbox_adapter extends RecyclerView.Adapter<Comman_checkbo
             item_checkbox = itemView.findViewById(R.id.item_checkbox);
             check_item_name = itemView.findViewById(R.id.checked_item_name);
             check_item_image = itemView.findViewById(R.id.checked_item_icon);
+
 
             itemView.setTag(this);
 

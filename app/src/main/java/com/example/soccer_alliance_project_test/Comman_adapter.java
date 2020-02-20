@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class Comman_adapter extends RecyclerView.Adapter<Comman_adapter.ViewHolder> {
@@ -36,9 +38,8 @@ public class Comman_adapter extends RecyclerView.Adapter<Comman_adapter.ViewHold
     public void onBindViewHolder(@NonNull Comman_adapter.ViewHolder holder, int position) {
 
         holder.item_name.setText(comman_data_lists.get(position).getItem_name());
-        holder.item_image.setImageResource(comman_data_lists.get(position).getItem_image());
-
-
+        //holder.item_image.setImageResource(comman_data_lists.get(position).getItem_image());
+        Glide.with(context).load("https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80").into(holder.item_image);
     }
 
     public void setOnClickListener(View.OnClickListener clickListener){
